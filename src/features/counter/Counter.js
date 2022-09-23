@@ -4,7 +4,9 @@ import { increment, decrement, reset, incrementByAmount } from "./counterSlice"
 
 
 const Counter = () => {
-    const count = useSelector((state) => state.counter.count);
+    const count = useSelector((state) => state.counter.count);  //state.name.initialState=> lấy được state hiện tại
+
+
     const dispatch = useDispatch();
 
     const [incrementAmount, setIncrementAmount] = useState(0);
